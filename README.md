@@ -3,4 +3,6 @@
 ### ГБОУ СОШ 1955 СП-1
 #### Made for Individual project course
 
+This is a firmware for iot.kaluginvlad.com smart switch device
+
 ### To compile, type "make all"
