@@ -15,7 +15,7 @@ SHELL := '/bin/bash'
 PYTHON_PATH = '/usr/bin/python3'
 #PYTHON_PATH = 'py'
 
-ESP_URL = 'http://esprelay.iot.minhinlocal'
+ESP_URL = 'http://10.0.16.105'
 
 ESP_SER = '/dev/ttyUSB0' 
 #ESP_SER = 'COM4' 
@@ -30,6 +30,11 @@ ARDUINO_PATH := ~/soft/arduino-1.8.13/
 ARDUINO_PACK := ~/.arduino15/
 ARDUINO_HOME := ~/Arduino/
 
+## ESP8266 board type
+
+#BOARD_TYPE := modemcuv2
+BOARD_TYPE := generic
+
 all:
 	@echo "Building html..."
 	make -s html
@@ -42,10 +47,10 @@ html:
 	$(PYTHON_PATH) web_assets/html2cpp.py
 
 sketch: esprelay-mqtt.ino
-	$(ARDUINO_PATH)arduino-builder -hardware $(ARDUINO_PATH)hardware -hardware $(ARDUINO_PACK)packages -libraries $(ARDUINO_PATH)libraries -libraries $(ARDUINO_HOME)libraries -tools $(ARDUINO_PATH)tools-builder -tools $(ARDUINO_PACK)packages -fqbn esp8266:esp8266:nodemcuv2 -build-path build esprelay-mqtt.ino
+	$(ARDUINO_PATH)arduino-builder -hardware $(ARDUINO_PATH)hardware -hardware $(ARDUINO_PACK)packages -libraries $(ARDUINO_PATH)libraries -libraries $(ARDUINO_HOME)libraries -tools $(ARDUINO_PATH)tools-builder -tools $(ARDUINO_PACK)packages -fqbn esp8266:esp8266:$(BOARD_TYPE) -build-path build esprelay-mqtt.ino
 
 ota_upload:
-	$(PYTHON_PATH) upload.py $(ESP_URL)
+	$(PYTHON_PATH) upload.py $(ESP_URL) build/esprelay-mqtt.ino.bin
 
 ser_upload:
 	esptool --port $(ESP_SER) write_flash 0x0000 build/esprelay-mqtt.ino.bin

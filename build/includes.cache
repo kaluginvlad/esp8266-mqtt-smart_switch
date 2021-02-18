@@ -1,0 +1,167 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\cores\\esp8266"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\variants\\nodemcu"
+  },
+  {
+    "Sourcefile": "D:\\Projects\\esp8266\\esprelay-mqtt\\build\\sketch\\esprelay-mqtt.ino.cpp",
+    "Include": "ESP8266WiFi.h",
+    "Includepath": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\ESP8266WiFi\\src"
+  },
+  {
+    "Sourcefile": "D:\\Projects\\esp8266\\esprelay-mqtt\\build\\sketch\\esprelay-mqtt.ino.cpp",
+    "Include": "DNSServer.h",
+    "Includepath": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\DNSServer\\src"
+  },
+  {
+    "Sourcefile": "D:\\Projects\\esp8266\\esprelay-mqtt\\build\\sketch\\esprelay-mqtt.ino.cpp",
+    "Include": "ESP8266WebServer.h",
+    "Includepath": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\ESP8266WebServer\\src"
+  },
+  {
+    "Sourcefile": "D:\\Projects\\esp8266\\esprelay-mqtt\\build\\sketch\\esprelay-mqtt.ino.cpp",
+    "Include": "ESP8266HTTPUpdateServer.h",
+    "Includepath": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\ESP8266HTTPUpdateServer\\src"
+  },
+  {
+    "Sourcefile": "D:\\Projects\\esp8266\\esprelay-mqtt\\build\\sketch\\esprelay-mqtt.ino.cpp",
+    "Include": "PubSubClient.h",
+    "Includepath": "C:\\Users\\Vladislav Kalugin\\Documents\\Arduino\\libraries\\PubSubClient\\src"
+  },
+  {
+    "Sourcefile": "D:\\Projects\\esp8266\\esprelay-mqtt\\build\\sketch\\esprelay-mqtt.ino.cpp",
+    "Include": "EEPROM.h",
+    "Includepath": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\EEPROM"
+  },
+  {
+    "Sourcefile": "D:\\Projects\\esp8266\\esprelay-mqtt\\build\\sketch\\esprelay-mqtt.ino.cpp",
+    "Include": "ArduinoJson.h",
+    "Includepath": "C:\\Users\\Vladislav Kalugin\\Documents\\Arduino\\libraries\\ArduinoJson\\src"
+  },
+  {
+    "Sourcefile": "D:\\Projects\\esp8266\\esprelay-mqtt\\build\\sketch\\esprelay-mqtt.ino.cpp",
+    "Include": "Ticker.h",
+    "Includepath": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\Ticker\\src"
+  },
+  {
+    "Sourcefile": "D:\\Projects\\esp8266\\esprelay-mqtt\\build\\sketch\\esprelay-mqtt.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\ESP8266WiFi\\src\\BearSSLHelpers.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\ESP8266WiFi\\src\\CertStoreBearSSL.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\ESP8266WiFi\\src\\ESP8266WiFi.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\ESP8266WiFi\\src\\ESP8266WiFiAP.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\ESP8266WiFi\\src\\ESP8266WiFiGeneric.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\ESP8266WiFi\\src\\ESP8266WiFiGratuitous.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\ESP8266WiFi\\src\\ESP8266WiFiMulti.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\ESP8266WiFi\\src\\ESP8266WiFiSTA-WPS.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\ESP8266WiFi\\src\\ESP8266WiFiSTA.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\ESP8266WiFi\\src\\ESP8266WiFiScan.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\ESP8266WiFi\\src\\WiFiClient.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\ESP8266WiFi\\src\\WiFiClientSecureAxTLS.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\ESP8266WiFi\\src\\WiFiClientSecureBearSSL.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\ESP8266WiFi\\src\\WiFiServer.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\ESP8266WiFi\\src\\WiFiServerSecureAxTLS.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\ESP8266WiFi\\src\\WiFiServerSecureBearSSL.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\ESP8266WiFi\\src\\WiFiUdp.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\DNSServer\\src\\DNSServer.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\ESP8266WebServer\\src\\detail\\mimetable.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vladislav Kalugin\\Documents\\Arduino\\libraries\\PubSubClient\\src\\PubSubClient.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\EEPROM\\EEPROM.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Vladislav Kalugin\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.7.4\\libraries\\Ticker\\src\\Ticker.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]

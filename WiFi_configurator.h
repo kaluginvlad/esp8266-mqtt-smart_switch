@@ -18,8 +18,7 @@
 const int MAX_CONNECTION_TICKS = 100; // Amount of the WiFi ticks before connection fail status
                                       // 1 Tick - 200 ms
                                       
-#define AP_SSID "ESP_TEST"            // SSID of the Soft-AP
-#define AP_PASS "IOT_PA55W()RD!"      // Password of the Soft-AP
+#define AP_SSID "SMART_DEV"           // SSID of the Soft-AP
 
 #define LED_PIN 2                     // LED pin
 bool REVERSE_LED = true;              // Reverse led signal
@@ -36,7 +35,7 @@ void startAP() {
   // Set WiFi to the AP mode
   WiFi.mode(WIFI_AP);
   // Start AP
-  WiFi.softAP(AP_SSID, AP_PASS);
+  WiFi.softAP(AP_SSID);
 }
 
 // Checks WiFi status

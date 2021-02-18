@@ -16,6 +16,7 @@
 
 #include <ESP8266WiFi.h>
 #include <WiFiClientSecure.h>
+#include <DNSServer.h>
 #include <ESP8266WebServer.h>
 #include <ESP8266HTTPUpdateServer.h>
 #include <PubSubClient.h>
@@ -36,7 +37,7 @@
 #include "web_assets/c++/html_root.h" // root HTML
 
 // Build version
-#define BUILD "MQTT-alpha-1.0"
+#define BUILD "MQTT-alpha-1.1"
 
 bool config_ready;
 bool switch_state = false;
@@ -48,6 +49,8 @@ Ticker timetable_ticker;
 /* Configuration */
 
 #define RELAY_PIN             0
+
+const byte DNS_PORT = 53;                           // Internal DNS server port
 
 #define NTP_SERVER            "ntp1.stratum1.ru"    // NTP server host
 #define NTP_UTC_OFFSET        0                     // NTP UTC offset
@@ -62,6 +65,9 @@ const char* DEVICE_KEY;
 char MQTT_TOPIC_IN[100];
 char MQTT_TOPIC_OUT[100];
 char MQTT_TOPIC_REPORT[100];
+
+// Internal DNS-server
+DNSServer dns_server;
 
 // Configuration web server port 80
 ESP8266WebServer web_srv(80);
@@ -225,7 +231,18 @@ void mqtt_connect() {
 
   } else {
     Serial.print("Fail: ");
-    Serial.println(mqtt_client.state());
+    int mqtt_state = mqtt_client.state();
+    Serial.println(mqtt_state);
+
+    // On authentication error
+    if (mqtt_state == 4 || mqtt_state == 5) {
+
+      Serial.println("MQTT authentication failed: wrong creds!");
+      EEPROMClear();
+
+      ESP.restart();
+    }
+
     wifiClient.stop();
   }
 }
@@ -346,6 +363,10 @@ void setup() {
   // Start WiFi init
   config_ready = WiFiConfigure(web_srv);
 
+  // Configure DNS server
+  dns_server.setTTL(300);
+  dns_server.start(DNS_PORT, "smart_dev.local", IPAddress(192, 168, 4, 1));
+
   // Add WEB server handlers
   web_srv.on("/", HTTP_handleRoot);
   web_srv.on("/style.css", HTTP_handleCSS);
@@ -403,7 +424,11 @@ void loop() {
       start_mqtt_connection();
     }
     mqtt_client.loop();
-  } 
+  }
+  else {
+    // Handle DNS requests in config mode
+    dns_server.processNextRequest();
+  }
   web_srv.handleClient(); 
 }
 
